@@ -770,3 +770,116 @@ a {
     }
 
 }
+
+/* =========================
+   HACKATHON SECTION
+========================= */
+
+.hackathon-section {
+    background-color: white;
+
+    border: 3px solid #A8DADC;
+
+    border-radius: 30px;
+
+    padding: 35px;
+
+    margin-bottom: 45px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.hackathon-text {
+    max-width: 750px;
+
+    margin: 0 auto 25px auto;
+}
+
+
+.hackathon-text h2 {
+    font-size: 32px;
+
+    color: #6D597A;
+
+    margin-bottom: 10px;
+}
+
+
+.hackathon-text p {
+    font-size: 20px;
+
+    color: #555555;
+}
+
+
+.hackathon-photo {
+    width: 100%;
+
+    max-width: 700px;
+
+    height: auto;
+
+    display: block;
+
+    margin: 0 auto;
+
+    border-radius: 22px;
+
+    border: 3px solid #EADFD3;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.10);
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+.hackathon-photo:hover {
+    transform: scale(1.02);
+}
+
+/* =========================
+   ABOUT MAIN PHOTO
+========================= */
+
+.about-photo-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+
+.about-main-photo {
+    width: 100%;
+    max-width: 750px;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 30px;
+
+    border: 5px solid #CDB4DB;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.about-main-photo:hover {
+    transform: rotate(-1deg) scale(1.02);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.16);
+}
