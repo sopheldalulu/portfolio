@@ -1,0 +1,772 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #FAF7F2;
+
+    color: #333333;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================
+   FONTS
+========================= */
+
+.gaegu-regular {
+    font-family: "Gaegu", sans-serif;
+
+    font-weight: 400;
+
+    font-style: normal;
+}
+
+
+.gamja-flower-regular {
+    font-family: "Gamja Flower", sans-serif;
+
+    font-weight: 400;
+
+    font-style: normal;
+}
+
+
+
+/* =========================
+   COLOR PALETTE
+========================= */
+
+/*
+
+Teal:        #5FA8A0
+Purple:      #CDB4DB
+Light Teal:  #A8DADC
+Beige:       #EADFD3
+Cream:       #FAF7F2
+Dark Text:   #333333
+
+*/
+
+
+
+/* =========================
+   PAGE CONTENT
+========================= */
+
+.page-content {
+    width: 85%;
+
+    max-width: 1150px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background-color: #5FA8A0;
+
+    padding: 18px 40px;
+}
+
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+nav a:hover {
+    background-color: #A8DADC;
+
+    color: #333333;
+}
+
+
+
+/* =========================
+   HOME PAGE
+========================= */
+
+main {
+    text-align: center;
+
+    padding: 90px 40px;
+
+    background: linear-gradient(
+        135deg,
+        #CDB4DB,
+        #EADFD3
+    );
+
+    border-radius: 0 0 30px 30px;
+}
+
+
+main h1 {
+    font-size: 64px;
+
+    color: #333333;
+
+    margin-bottom: 10px;
+}
+
+
+main > p {
+    font-size: 21px;
+
+    color: #555555;
+
+    font-weight: 500;
+}
+
+
+
+/* =========================
+   HOME ABOUT BOX
+========================= */
+
+.container {
+    max-width: 850px;
+
+    margin: 55px auto;
+
+    padding: 35px;
+
+    background-color: white;
+
+    border-radius: 25px;
+
+    border: 3px solid #A8DADC;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.container h2 {
+    font-size: 32px;
+
+    color: #6D597A;
+
+    margin-bottom: 15px;
+}
+
+
+.container p {
+    font-size: 20px;
+
+    color: #555555;
+
+    margin-bottom: 15px;
+}
+
+
+.container p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* =========================
+   GENERAL HEADINGS
+========================= */
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+
+
+/* =========================
+   GENERAL LINKS
+========================= */
+
+a {
+    transition: all 0.3s ease;
+}
+
+
+
+/* =========================
+   TEXT SELECTION
+========================= */
+
+::selection {
+    background-color: #A8DADC;
+
+    color: #333333;
+}
+
+
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-page {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 60px 25px;
+}
+
+
+
+/* =========================
+   ABOUT HEADER
+========================= */
+
+.about-header {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+
+.about-header h1 {
+    font-size: 52px;
+
+    color: #6D597A;
+
+    margin-bottom: 5px;
+}
+
+
+.about-header p {
+    font-size: 22px;
+
+    color: #666666;
+}
+
+
+
+/* =========================
+   ABOUT MAIN CARD
+========================= */
+
+.about-card {
+    background: linear-gradient(
+        135deg,
+        #CDB4DB,
+        #EADFD3
+    );
+
+    border-radius: 30px;
+
+    padding: 45px;
+
+    margin-bottom: 40px;
+}
+
+
+.about-text {
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+
+.about-text h2 {
+    font-size: 30px;
+
+    line-height: 1.4;
+
+    margin-bottom: 18px;
+
+    color: #444444;
+}
+
+
+.about-text p {
+    font-size: 20px;
+
+    margin-bottom: 18px;
+
+    color: #444444;
+}
+
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* =========================
+   ABOUT BOXES
+========================= */
+
+.about-sections {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+
+    margin-bottom: 55px;
+}
+
+
+.about-box {
+    background-color: white;
+
+    border-radius: 22px;
+
+    padding: 28px;
+
+    border: 2px solid #A8DADC;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.about-box:nth-child(even) {
+    border-color: #5FA8A0;
+}
+
+
+.about-box:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.10);
+}
+
+
+.about-box h3 {
+    font-size: 25px;
+
+    margin-bottom: 12px;
+}
+
+
+.about-box p {
+    font-size: 19px;
+
+    color: #555555;
+}
+
+
+
+/* =========================
+   ABOUT PROJECT LINK
+========================= */
+
+.about-project-link {
+    text-align: center;
+
+    background-color: #EADFD3;
+
+    border-radius: 25px;
+
+    padding: 40px 25px;
+}
+
+
+.about-project-link h2 {
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+
+.about-project-link p {
+    color: #666666;
+
+    margin-bottom: 22px;
+
+    font-size: 19px;
+}
+
+
+
+/* =========================
+   PROJECTS PAGE
+========================= */
+
+.projects-page {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 60px 25px;
+}
+
+
+
+/* =========================
+   PROJECTS HEADER
+========================= */
+
+.projects-header {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+
+.projects-header h1 {
+    font-size: 48px;
+
+    color: #6D597A;
+}
+
+
+.projects-header p {
+    font-size: 20px;
+
+    color: #666666;
+}
+
+
+
+/* =========================
+   PROJECT GRID
+========================= */
+
+.projects-grid {
+    columns: 3;
+
+    column-gap: 25px;
+}
+
+
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card {
+    display: inline-block;
+
+    width: 100%;
+
+    margin-bottom: 25px;
+
+    background-color: white;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    break-inside: avoid;
+
+    border: 2px solid #CDB4DB;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.project-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, 0.13);
+
+    border-color: #A8DADC;
+}
+
+
+
+/* =========================
+   PROJECT IMAGES
+========================= */
+
+.project-card img {
+    width: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+
+/* =========================
+   PROJECT INFO
+========================= */
+
+.project-info {
+    padding: 22px;
+}
+
+
+.project-info h3 {
+    font-size: 26px;
+
+    color: #333333;
+
+    margin-bottom: 8px;
+}
+
+
+.project-info p {
+    font-size: 18px;
+
+    color: #666666;
+
+    margin-bottom: 15px;
+}
+
+
+
+/* =========================
+   PROJECT TAGS
+========================= */
+
+.project-tags {
+    margin-top: 12px;
+
+    margin-bottom: 18px;
+}
+
+
+.project-tags span {
+    display: inline-block;
+
+    background-color: #EADFD3;
+
+    color: #3D7A73;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    padding: 6px 11px;
+
+    border-radius: 20px;
+
+    margin-right: 5px;
+
+    margin-bottom: 7px;
+}
+
+
+
+/* =========================
+   PROJECT BUTTONS
+========================= */
+
+.project-button {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background-color: #5FA8A0;
+
+    color: white;
+
+    font-weight: bold;
+
+    padding: 10px 18px;
+
+    border-radius: 25px;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.project-button:hover {
+    background-color: #A8DADC;
+
+    color: #333333;
+
+    transform: translateX(3px);
+}
+
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .projects-grid {
+        columns: 2;
+    }
+
+
+    .about-sections {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    main h1 {
+        font-size: 50px;
+    }
+
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+
+    .page-content {
+        width: 95%;
+    }
+
+
+    nav {
+        padding: 15px;
+    }
+
+
+    nav ul {
+        gap: 8px;
+    }
+
+
+    nav a {
+        font-size: 17px;
+
+        padding: 7px 10px;
+    }
+
+
+    main {
+        padding: 65px 15px;
+    }
+
+
+    main h1 {
+        font-size: 40px;
+    }
+
+
+    main > p {
+        font-size: 18px;
+    }
+
+
+    .container {
+        margin: 30px auto;
+
+        padding: 25px;
+    }
+
+
+    .projects-page {
+        padding: 40px 10px;
+    }
+
+
+    .projects-header h1 {
+        font-size: 38px;
+    }
+
+
+    .projects-grid {
+        columns: 1;
+    }
+
+}
+
+
+
+/* =========================
+   ABOUT MOBILE
+========================= */
+
+@media (max-width: 750px) {
+
+
+    .about-page {
+        padding: 40px 10px;
+    }
+
+
+    .about-header h1 {
+        font-size: 40px;
+    }
+
+
+    .about-card {
+        padding: 30px 24px;
+    }
+
+
+    .about-sections {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-project-link {
+        padding: 30px 20px;
+    }
+
+}
